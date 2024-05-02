@@ -1,16 +1,5 @@
-# address_utility_app
+A proposta do projeto é permitir que o usuário localize seu endereço através do Logradouro, cidade e UF. Após obter uma lista de endereços correspondentes, o usuário pode refinar sua busca adicionando filtros como o bairro e a UF. Uma vez encontrado o endereço desejado, ele tem a opção de adicioná-lo à sua lista de "Meus endereços", onde poderá visualizar facilmente seus endereços salvos.
 
-A new Flutter project.
+Para desenvolver este projeto, foi adotada uma arquitetura baseada em MVC, com o gerenciamento de estado sendo realizado através do MobX. O aplicativo foi projetado para ser responsivo em diferentes plataformas, incluindo WEB, Android e IOS, utilizando pacotes compatíveis com cada uma delas.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+O aplicativo consiste basicamente em duas páginas: "Meus endereços", onde o usuário pode visualizar os endereços salvos, e "Procurar endereços", onde é possível realizar buscas por endereços. Para evitar repetições no código, foram componentizados widgets como o "CardMyAddress", responsável pela exibição dos endereços na lista, e o "MyDrawer", que representa o menu lateral do aplicativo.
